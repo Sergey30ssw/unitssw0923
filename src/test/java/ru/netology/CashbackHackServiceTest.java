@@ -26,7 +26,7 @@ class CashbackHackServiceTest {
         assertEquals(expected,actual);
     }
     @Test
-    public void TestBoundaryEqualsAmount() {
+    public void TestAmountEqualBoundaryt() {
         CashbackHackService service = new CashbackHackService();
         int amount = 0;
 
