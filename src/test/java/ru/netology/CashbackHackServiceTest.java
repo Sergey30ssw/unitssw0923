@@ -12,7 +12,7 @@ public class CashbackHackServiceTest {
         int actual = service.remain(amount);
         int expected = 300;
 
-        assertEquals(expected,actual);
+        Assert.assertEquals(actual, expected);
     }
     @Test
     public void TestAmountMoreBoundary() {
@@ -22,7 +22,7 @@ public class CashbackHackServiceTest {
         int actual = service.remain(amount);
         int expected = 900;
 
-        assertEquals(expected,actual);
+        Assert.assertEquals(actual, expected);
     }
     @Test
     public void TestAmountEqualBoundaryt() {
@@ -32,7 +32,7 @@ public class CashbackHackServiceTest {
         int actual = service.remain(amount);
         int expected = 1_000;
 
-        assertEquals(expected,actual);
+        Assert.assertEquals(actual, expected);
     }
 
 }
