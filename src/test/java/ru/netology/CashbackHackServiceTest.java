@@ -27,10 +27,10 @@ public class CashbackHackServiceTest {
     @Test
     public void TestAmountEqualBoundaryt() {
         CashbackHackService service = new CashbackHackService();
-        int amount = 0;
+        int amount = 1_000;
 
         int actual = service.remain(amount);
-        int expected = 1_000;
+        int expected = 0;
 
         Assert.assertEquals(actual, expected);
     }
